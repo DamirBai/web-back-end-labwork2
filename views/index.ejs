@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Email Form</h1>
+        <form action="/send" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="from">Your Email:</label>
+                <input type="email" class="form-control" id="from" name="from">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Your Application Password:</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+
+            <div class="form-group">
+                <label for="to">To:</label>
+                <input type="email" class="form-control" id="to" name="to">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" class="form-control" id="subject" name="subject">
+            </div>
+
+            <div class="form-group">
+                <label for="text">Text:</label>
+                <textarea class="form-control" id="text" name="text"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="attachment">Attachment:</label>
+                <input type="file" class="form-control-file" id="attachment" name="attachment">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Email</button>
+        </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
